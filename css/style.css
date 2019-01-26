@@ -6,12 +6,10 @@ is
 a comment! */
 
 /* CSS Syntax:
-
 selector {
   property: value;
   property: value;
 }
-
 */
 
 /* Type selector */
@@ -69,4 +67,30 @@ figcaption {
 
 #details a:active {
   color: red;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  background: #eee;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0; 
+}
+
+.col-1 {
+  float: left;
+  width: 32%;
+  background: #ccc;
 }
